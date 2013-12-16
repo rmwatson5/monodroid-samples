@@ -296,19 +296,19 @@ namespace BluetoothLeGatt
 			service = s;
 		}
 
-		public override void OnConnectionStateChange (BluetoothGatt gatt, GattStatus status, int newState)
+		public override void OnConnectionStateChange (BluetoothGatt gatt, GattStatus status, ProfileState newState)
 		{
 			String intentAction;
-			if (newState == (int) ProfileState.Connected) {
+			if (newState == ProfileState.Connected) {
 				intentAction = BluetoothLeService.ACTION_GATT_CONNECTED;
 				BluetoothLeService.mConnectionState = State.Connected;
 				service.BroadcastUpdate (intentAction);
 				Log.Info (BluetoothLeService.TAG, "Connected to GATT server.");
 				// Attempts to discover services after successful connection.
 				Log.Info (BluetoothLeService.TAG, "Attempting to start service discovery:" +
-				          BluetoothLeService.mBluetoothGatt.DiscoverServices ());
+					BluetoothLeService.mBluetoothGatt.DiscoverServices ());
 
-			} else if (newState == (int) ProfileState.Disconnected) {
+			} else if (newState == ProfileState.Disconnected) {
 				intentAction = BluetoothLeService.ACTION_GATT_DISCONNECTED;
 				BluetoothLeService.mConnectionState = State.Disconnected;
 				Log.Info (BluetoothLeService.TAG, "Disconnected from GATT server.");
