@@ -1,0 +1,82 @@
+<metadata>
+
+  <attr path="/api/package[@name='com.esri.android.action']" name="managedName">Esri.Android.Action</attr>
+  <attr path="/api/package[@name='com.esri.android.io']" name="managedName">Esri.Android.IO</attr>
+  <attr path="/api/package[@name='com.esri.android.map']" name="managedName">Esri.Android.Map</attr>
+  <attr path="/api/package[@name='com.esri.android.map.ags']" name="managedName">Esri.Android.Map.Ags</attr>
+  <attr path="/api/package[@name='com.esri.android.map.bing']" name="managedName">Esri.Android.Map.Bing</attr>
+  <attr path="/api/package[@name='com.esri.android.map.event']" name="managedName">Esri.Android.Map.Event</attr>
+  <attr path="/api/package[@name='com.esri.android.map.ogc']" name="managedName">Esri.Android.Map.Ogc</attr>
+  <attr path="/api/package[@name='com.esri.android.map.osm']" name="managedName">Esri.Android.Map.Osm</attr>
+  <attr path="/api/package[@name='com.esri.android.map.popup']" name="managedName">Esri.Android.Map.Popup</attr>
+  <attr path="/api/package[@name='com.esri.android.oauth']" name="managedName">Esri.Android.Oauth</attr>
+  <attr path="/api/package[@name='com.esri.core.ags']" name="managedName">Esri.Core.Ags</attr>
+  <attr path="/api/package[@name='com.esri.core.annotations']" name="managedName">Esri.Core.Annotations</attr>
+  <attr path="/api/package[@name='com.esri.core.gdb']" name="managedName">Esri.Core.Gdb</attr>
+  <attr path="/api/package[@name='com.esri.core.geometry']" name="managedName">Esri.Core.Geometry</attr>
+  <attr path="/api/package[@name='com.esri.core.internal.geometry']" name="managedName">Esri.Core.Internal.Geometry</attr>
+  <attr path="/api/package[@name='com.esri.core.internal.io.handler']" name="managedName">Esri.Core.Internal.IO.Handler</attr>
+  <attr path="/api/package[@name='com.esri.core.internal.symbol.advanced']" name="managedName">Esri.Core.Internal.Symbol.Advanced</attr>
+  <attr path="/api/package[@name='com.esri.core.internal.tasks']" name="managedName">Esri.Core.Internal.Tasks</attr>
+  <attr path="/api/package[@name='com.esri.core.internal.util']" name="managedName">Esri.Core.Internal.Util</attr>
+  <attr path="/api/package[@name='com.esri.core.internal.value']" name="managedName">Esri.Core.Internal.Value</attr>
+  <attr path="/api/package[@name='com.esri.core.internal.widget']" name="managedName">Esri.Core.Internal.Widget</attr>
+  <attr path="/api/package[@name='com.esri.core.io']" name="managedName">Esri.Core.IO</attr>
+  <attr path="/api/package[@name='com.esri.core.map']" name="managedName">Esri.Core.Map</attr>
+  <attr path="/api/package[@name='com.esri.core.map.bing']" name="managedName">Esri.Core.Map.Bing</attr>
+  <attr path="/api/package[@name='com.esri.core.map.popup']" name="managedName">Esri.Core.Map.Popup</attr>
+  <attr path="/api/package[@name='com.esri.core.portal']" name="managedName">Esri.Core.Portal</attr>
+  <attr path="/api/package[@name='com.esri.core.renderer']" name="managedName">Esri.Core.Renderer</attr>
+  <attr path="/api/package[@name='com.esri.core.symbol']" name="managedName">Esri.Core.Symbol</attr>
+  <attr path="/api/package[@name='com.esri.core.symbol.advanced']" name="managedName">Esri.Core.Symbol.Advanced</attr>
+  <attr path="/api/package[@name='com.esri.core.table']" name="managedName">Esri.Core.Table</attr>
+  <attr path="/api/package[@name='com.esri.core.tasks']" name="managedName">Esri.Core.Tasks</attr>
+  <attr path="/api/package[@name='com.esri.core.tasks.ags']" name="managedName">Esri.Core.Tasks.Ags</attr>
+  <attr path="/api/package[@name='com.esri.core.tasks.ags.find']" name="managedName">Esri.Core.Tasks.Ags.Find</attr>
+  <attr path="/api/package[@name='com.esri.core.tasks.ags.geocode']" name="managedName">Esri.Core.Tasks.Ags.Geocode</attr>
+  <attr path="/api/package[@name='com.esri.core.tasks.ags.geoprocessing']" name="managedName">Esri.Core.Tasks.Ags.Geoprocessing</attr>
+  <attr path="/api/package[@name='com.esri.core.tasks.ags.identify']" name="managedName">Esri.Core.Tasks.Ags.Identify</attr>
+  <attr path="/api/package[@name='com.esri.core.tasks.ags.na']" name="managedName">Esri.Core.Tasks.Ags.NA</attr>
+  <attr path="/api/package[@name='com.esri.core.tasks.ags.query']" name="managedName">Esri.Core.Tasks.Ags.Query</attr>
+  <attr path="/api/package[@name='com.esri.core.tasks.gdb']" name="managedName">Esri.Core.Tasks.Gdb</attr>
+  <attr path="/api/package[@name='com.esri.core.tasks.geocode']" name="managedName">Esri.Core.Tasks.Geocode</attr>
+  <attr path="/api/package[@name='com.esri.core.tasks.na']" name="managedName">Esri.Core.Tasks.NA</attr>
+  <attr path="/api/package[@name='com.esri.core.tasks.oauth']" name="managedName">Esri.Core.Tasks.Oauth</attr>
+  <attr path="/api/package[@name='com.esri.core.tasks.query']" name="managedName">Esri.Core.Tasks.Query</attr>
+  <attr path="/api/package[@name='com.esri.core.tasks.tilecache']" name="managedName">Esri.Core.Tasks.Tilecache</attr>
+  <attr path="/api/package[@name='org.achartengine.internal']" name="managedName">Achartengine.Internal</attr>
+  <attr path="/api/package[@name='org.achartengine.internal.chart']" name="managedName">Achartengine.Internal.Chart</attr>
+  <attr path="/api/package[@name='org.achartengine.internal.model']" name="managedName">Achartengine.Internal.Model</attr>
+
+  <attr path="/api/package[@name='com.esri.core.geometry']/class[@name='MultiVertexGeometry']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.esri.core.tasks.ags.geocode']/class[@name='LocatorResult']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.esri.core.tasks.geocode']/class[@name='LocatorResult']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.esri.core.geometry']/class[@name='VertexDescription']"  name="visibility">public</attr>
+
+
+  <remove-node path="/api/package[@name='com.esri.core.geometry']/class[@name='MultiPath']/field[@name='m_impl']" />
+  <remove-node path="/api/package[@name='com.esri.android.map.popup']/class[@name='ArcGISMediaAdapter.MediaView']/method[@name='g' and count(parameter)=0]" />
+  <remove-node path="/api/package[@name='com.esri.core.internal.catalog']" />
+
+  <attr path="//method[@name='getType' and count(parameter)=0]" name="name">GetType2</attr>
+
+
+
+  <remove-node path="/api/package[@name='com.esri.android.map.popup']/class[@name='ArcGISEditAttributesAdapter.CodedValueSpinnerAdapter']" />
+  <remove-node path="/api/package[@name='com.esri.android.map.popup']/class[@name='ArcGISEditAttributesAdapter.RangeSpinnerAdapter']" />
+
+
+
+<!--    PostBuild-->
+
+    <remove-node path="/api/package[@name='com.esri.android.map.popup']/interface[@name='ArcGISAttachmentsAdapter.InternalAttachmentAdapterListener']" />
+    <remove-node path="/api/package[@name='com.esri.android.map.popup']/interface[@name='ArcGISMediaAdapter.MediaAdapterListener']" />
+
+
+	<remove-node path="/api/package[@name='com.esri.android.map.popup']/interface[@name='ArcGISMediaAdapter.MediaView.LoadStatusListener']" />
+    <remove-node path="/api/package[@name='com.esri.android.map.popup']/interface[@name='Popup.InternalPopupListener']" />
+
+
+
+</metadata>
+  

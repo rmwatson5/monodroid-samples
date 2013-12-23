@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0BB95C32-EE75-4264-AF0D-40462DB430FC}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{10368E6C-D01B-4462-8E8B-01FC667A7035};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ArcGISLib</RootNamespace>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AssemblyName>ArcGISLib</AssemblyName>
+    <TargetFrameworkVersion>v4.3</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;__MOBILE__;__ANDROID__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants>__MOBILE__;__ANDROID__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Additions\ArcGISFixes.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Additions\AboutAdditions.txt" />
+    <None Include="Jars\AboutJars.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <TransformFile Include="Transforms\EnumFields.xml" />
+    <TransformFile Include="Transforms\EnumMethods.xml" />
+    <TransformFile Include="Transforms\Metadata.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Xamarin.Android.Bindings.targets" />
+  <ItemGroup>
+    <EmbeddedJar Include="..\arcgis-android-sdk\libs\arcgis-android-api.jar">
+      <Link>Jars\arcgis-android-api.jar</Link>
+    </EmbeddedJar>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Jars\armeabi\" />
+    <Folder Include="Jars\armeabi-v7a\" />
+    <Folder Include="Jars\x86\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedNativeLibrary Include="..\arcgis-android-sdk\libs\armeabi\libruntimecore_java.so">
+      <Link>Jars\armeabi\libruntimecore_java.so</Link>
+    </EmbeddedNativeLibrary>
+    <EmbeddedNativeLibrary Include="..\arcgis-android-sdk\libs\armeabi-v7a\libruntimecore_java.so">
+      <Link>Jars\armeabi-v7a\libruntimecore_java.so</Link>
+    </EmbeddedNativeLibrary>
+    <EmbeddedNativeLibrary Include="..\arcgis-android-sdk\libs\x86\libruntimecore_java.so">
+      <Link>Jars\x86\libruntimecore_java.so</Link>
+    </EmbeddedNativeLibrary>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedReferenceJar Include="..\arcgis-android-sdk\libs\jackson-core-lgpl-1.9.5.jar">
+      <Link>Jars\jackson-core-lgpl-1.9.5.jar</Link>
+    </EmbeddedReferenceJar>
+    <EmbeddedReferenceJar Include="..\arcgis-android-sdk\libs\jackson-mapper-lgpl-1.9.5.jar">
+      <Link>Jars\jackson-mapper-lgpl-1.9.5.jar</Link>
+    </EmbeddedReferenceJar>
+    <EmbeddedReferenceJar Include="..\arcgis-android-sdk\libs\jcifs-1.3.17.jar">
+      <Link>Jars\jcifs-1.3.17.jar</Link>
+    </EmbeddedReferenceJar>
+    <EmbeddedReferenceJar Include="$(HOME)/Library\Developer\Xamarin\android-sdk-mac_x86\extras\android\support\v4\android-support-v4.jar">
+      <Link>Jars\android-support-v4.jar</Link>
+    </EmbeddedReferenceJar>
+  </ItemGroup>
+</Project>
